@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>小儿外科前沿周报</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #2c5f8d;
+    --primary-light: #4a8db5;
+    --accent: #d97757;
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --border: #e5e7eb;
+    --ladd: #4a8db5;
+    --gross: #d97757;
+    --koop: #7c9885;
+    --ebm: #8b6f9c;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    padding: 32px 0 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  header h1 { font-size: 24px; font-weight: 600; letter-spacing: 0.5px; }
+  header .meta { margin-top: 8px; font-size: 14px; opacity: 0.92; }
+  header .stats { margin-top: 12px; display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+  header .stat { background: rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 12px; }
+  
+  /* Nav */
+  nav { background: white; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+  .nav-inner { display: flex; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .nav-inner button {
+    background: none; border: none; padding: 14px 18px; font-size: 14px; font-weight: 500;
+    color: var(--text-light); cursor: pointer; white-space: nowrap;
+    border-bottom: 2px solid transparent; transition: all 0.2s;
+  }
+  .nav-inner button.active { color: var(--primary); border-bottom-color: var(--primary); }
+  .nav-inner button:hover { color: var(--primary); }
+  
+  /* Main */
+  main { padding: 24px 0 60px; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  
+  /* Section */
+  .section-title {
+    font-size: 18px; font-weight: 600; color: var(--primary);
+    margin: 24px 0 16px; padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary-light);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-title::before { content: ""; width: 4px; height: 18px; background: var(--primary); border-radius: 2px; }
+  
+  /* Top Paper Card */
+  .top-paper {
+    background: var(--card); border-radius: 12px; padding: 20px;
+    margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary);
+  }
+  .top-paper .rank {
+    display: inline-block; background: var(--primary); color: white;
+    font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 10px; margin-bottom: 8px;
+  }
+  .top-paper h3 { font-size: 17px; line-height: 1.5; margin-bottom: 6px; color: var(--text); }
+  .top-paper h3 .cn { display: block; color: var(--text-light); font-size: 14px; font-weight: normal; margin-top: 4px; }
+  .top-paper .meta-line {
+    font-size: 12px; color: var(--text-light); margin: 8px 0 12px;
+    display: flex; flex-wrap: wrap; gap: 8px 12px;
+  }
+  .top-paper .meta-line span { display: inline-flex; align-items: center; }
+  .top-paper .journal { color: var(--primary); font-weight: 500; }
+  .top-paper .pmid { font-family: monospace; }
+  .top-paper .abstract {
+    background: #f9fafb; padding: 12px 14px; border-radius: 8px; font-size: 14px;
+    margin: 12px 0; color: #374151;
+  }
+  .top-paper .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  .top-paper .tag {
+    font-size: 11px; padding: 2px 8px; background: #eef2f7; color: var(--primary);
+    border-radius: 10px;
+  }
+  .top-paper .doi-link {
+    font-size: 12px; color: var(--accent); text-decoration: none; display: inline-block; margin-top: 6px;
+  }
+  .top-paper .doi-link:hover { text-decoration: underline; }
+  
+  /* Comments */
+  .comments { margin-top: 16px; }
+  .comment {
+    background: #fafbfc; border-radius: 8px; padding: 14px; margin-bottom: 10px;
+    border-left: 3px solid var(--primary-light);
+  }
+  .comment.ladd { border-left-color: var(--ladd); }
+  .comment.gross { border-left-color: var(--gross); }
+  .comment.koop { border-left-color: var(--koop); }
+  .comment.ebm { border-left-color: var(--ebm); }
+  .comment .author {
+    font-weight: 600; font-size: 13px; margin-bottom: 6px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .comment.ladd .author { color: var(--ladd); }
+  .comment.gross .author { color: var(--gross); }
+  .comment.koop .author { color: var(--koop); }
+  .comment.ebm .author { color: var(--ebm); }
+  .comment .author .angle {
+    font-weight: normal; color: var(--text-light); font-size: 12px;
+    background: white; padding: 1px 8px; border-radius: 8px; border: 1px solid var(--border);
+  }
+  .comment .body { font-size: 14px; line-height: 1.75; color: #374151; }
+  
+  /* Brief mentions */
+  .brief-list { display: grid; gap: 8px; }
+  .brief-item {
+    background: var(--card); padding: 14px 16px; border-radius: 8px;
+    display: flex; gap: 10px; align-items: flex-start;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .brief-item .num {
+    color: var(--text-light); font-size: 12px; min-width: 24px; font-weight: 500;
+    padding-top: 2px;
+  }
+  .brief-item .content { flex: 1; }
+  .brief-item .title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+  .brief-item .desc { font-size: 13px; color: var(--text-light); line-height: 1.6; }
+  .brief-item .journal-tag {
+    font-size: 11px; color: var(--primary); background: #eef2f7;
+    padding: 1px 6px; border-radius: 4px; margin-left: 6px;
+  }
+  
+  /* History list */
+  .history-item {
+    background: var(--card); padding: 16px; border-radius: 8px; margin-bottom: 8px;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .history-item .date { font-weight: 600; color: var(--text); }
+  .history-item .info { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+  .history-item .arrow { color: var(--primary); }
+  
+  /* About */
+  .about-card { background: var(--card); border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .about-card h3 { color: var(--primary); margin: 16px 0 8px; font-size: 16px; }
+  .about-card h3:first-child { margin-top: 0; }
+  .about-card p, .about-card li { font-size: 14px; color: #374151; margin: 6px 0; }
+  .about-card ul { padding-left: 20px; }
+  .persona { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .persona:last-child { border-bottom: none; }
+  .persona .name { font-weight: 600; color: var(--primary); }
+  .persona .angle { color: var(--text-light); font-size: 13px; }
+  .persona .desc { font-size: 13px; color: #4b5563; margin-top: 4px; }
+  .disclaimer {
+    background: #fef3c7; border-left: 3px solid #f59e0b; padding: 12px 14px;
+    border-radius: 6px; font-size: 13px; color: #78350f; margin-top: 16px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center; padding: 20px; color: var(--text-light); font-size: 12px;
+    border-top: 1px solid var(--border); margin-top: 40px;
+  }
+  
+  /* Loading / Error */
+  .status {
+    text-align: center; padding: 40px 20px; color: var(--text-light); font-size: 14px;
+  }
+  .error { color: var(--accent); }
+  
+  @media (max-width: 600px) {
+    header { padding: 24px 0 20px; }
+    header h1 { font-size: 20px; }
+    .top-paper { padding: 16px; }
+    .top-paper h3 { font-size: 16px; }
+    .nav-inner button { padding: 12px 14px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>📋 小儿外科前沿周报</h1>
+    <div class="meta" id="header-meta">加载中…</div>
+    <div class="stats" id="header-stats"></div>
+  </div>
+</header>
+
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <button class="active" data-tab="must">本周必读</button>
+      <button data-tab="brief">速览</button>
+      <button data-tab="history">历史</button>
+      <button data-tab="about">关于</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div id="status" class="status">正在加载周报数据…</div>
+    
+    <div id="tab-must" class="tab-content active">
+      <div id="top-papers"></div>
+    </div>
+    
+    <div id="tab-brief" class="tab-content">
+      <div class="section-title">📑 一周速览（30 篇）</div>
+      <div class="brief-list" id="brief-list"></div>
+    </div>
+    
+    <div id="tab-history" class="tab-content">
+      <div class="section-title">📚 历史周报</div>
+      <div id="history-list"></div>
+    </div>
+    
+    <div id="tab-about" class="tab-content">
+      <div class="section-title">ℹ️ 关于本项目</div>
+      <div class="about-card" id="about-content"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>小儿外科前沿周报 · 每周一自动更新</div>
+    <div style="margin-top:4px">由小满（CodeAct 后台）托管生成</div>
+  </div>
+</footer>
+
+<script>
+const PERSONAS = {
+  ladd: { name: '威廉·拉德（William E. Ladd）', angle: '解剖·基础', desc: '哈佛医学院首任小儿外科主任，小儿外科奠基人。视角：解剖学原理、胚胎发育基础、病理结构本身。' },
+  gross: { name: '罗伯特·格罗斯（Robert E. Gross）', angle: '创新·技术', desc: '完成世界首例先天性心脏病手术的先驱。视角：技术创新、术式改良、器械与材料进展。' },
+  koop: { name: 'C. Everett Koop', angle: '人文·温度', desc: '前美国卫生总监、费城儿童医院外科主任。视角：医患沟通、家庭决策、临床伦理与医者温度。' },
+  ebm: { name: '循证医学守门人', angle: '方法·证据', desc: '代表 GRADE 协作网与 Cochrane 精神的方法学家。视角：研究设计、证据等级、偏倚风险、临床可推广性。' }
+};
+
+// 数据加载策略：先 fetch 同目录 digest.json（部署后可用），
+// 失败时使用嵌入数据（双击打开本地文件也能用）
+let digestData = null;
+
+async function loadData() {
+  const status = document.getElementById('status');
+  try {
+    const resp = await fetch('./digest.json', { cache: 'no-cache' });
+    if (resp.ok) {
+      digestData = await resp.json();
+    } else {
+      throw new Error('fetch failed');
+    }
+  } catch (e) {
+    // 双击本地打开时 fetch 会失败，使用嵌入数据
+    if (typeof EMBEDDED_DIGEST !== 'undefined') {
+      digestData = EMBEDDED_DIGEST;
+      status.innerHTML = '<span style="color:#4a8db5">💡 当前显示离线快照（双击打开模式）。部署后会自动加载最新周报。</span>';
+    } else {
+      status.innerHTML = '<span class="error">❌ 数据加载失败，请确认 digest.json 与本文件在同一目录</span>';
+      return;
+    }
+  }
+  render();
+}
+
+function render() {
+  const d = digestData;
+  document.getElementById('status').style.display = 'none';
+  
+  // Header
+  document.getElementById('header-meta').textContent = 
+    `第 ${d.issue_date} 期 · ${d.period}`;
+  document.getElementById('header-stats').innerHTML = `
+    <div class="stat">📄 本周 ${d.total_papers} 篇</div>
+    <div class="stat">⭐ Top 必读 ${d.top_papers.length} 篇</div>
+    <div class="stat">📑 速览 ${d.brief_mentions.length} 篇</div>
+    <div class="stat">📅 本月累计 ${d.monthly_total} 篇</div>
+  `;
+  document.title = `小儿外科前沿周报 · ${d.issue_date}`;
+  
+  // Top papers
+  const topEl = document.getElementById('top-papers');
+  topEl.innerHTML = '<div class="section-title">⭐ 本周必读 Top 3</div>' + 
+    d.top_papers.map((p, i) => renderTopPaper(p, i + 1)).join('');
+  
+  // Brief mentions
+  const briefEl = document.getElementById('brief-list');
+  briefEl.innerHTML = d.brief_mentions.map((b, i) => `
+    <div class="brief-item">
+      <div class="num">${String(i + 1).padStart(2, '0')}</div>
+      <div class="content">
+        <div class="title">${escapeHtml(b.title)}</div>
+        <div class="desc">${escapeHtml(b.one_line)}<span class="journal-tag">${escapeHtml(b.journal_abbrev)}</span></div>
+      </div>
+    </div>
+  `).join('');
+  
+  // History
+  const histEl = document.getElementById('history-list');
+  histEl.innerHTML = `
+    <div class="history-item">
+      <div>
+        <div class="date">${d.issue_date}</div>
+        <div class="info">本期 · ${d.total_papers} 篇 · Top ${d.top_papers.length} · 速览 ${d.brief_mentions.length}</div>
+      </div>
+      <div class="arrow">→ 当前</div>
+    </div>
+    <div class="history-item" style="opacity:0.5">
+      <div>
+        <div class="date">更早的周报</div>
+        <div class="info">每周一自动累积，新期上线后这里会自动列出</div>
+      </div>
+    </div>
+  `;
+  
+  // About
+  document.getElementById('about-content').innerHTML = `
+    <h3>📌 这是什么</h3>
+    <p>每周一从 10 本小儿外科领域顶刊自动抓取最新文献，挑出 Top 3 必读 + 30 条速览，
+       并由 4 位不同立场的"历史/方法学专家"对 Top 3 做出多视角点评。</p>
+    <p style="margin-top:8px"><strong>5 分钟把握小儿外科领域一周前沿动态</strong>，省去你自己刷 PubMed 的时间。</p>
+    
+    <h3>👥 4 位点评人</h3>
+    ${Object.entries(PERSONAS).map(([k, p]) => `
+      <div class="persona">
+        <div class="name">${p.name}</div>
+        <div class="angle">【${p.angle}】</div>
+        <div class="desc">${p.desc}</div>
+      </div>
+    `).join('')}
+    
+    <h3>📚 目标期刊（10 本）</h3>
+    <ul>
+      <li><strong>小儿外科专门刊：</strong>J Pediatr Surg、Pediatr Surg Int、Eur J Pediatr Surg、Semin Pediatr Surg</li>
+      <li><strong>综合外科顶刊：</strong>Surgery、JAMA Surg、Ann Surg</li>
+      <li><strong>跨学科：</strong>Nature Medicine、Lancet、Lancet Child & Adolescent Health</li>
+    </ul>
+    
+    <h3>⚙️ 自动化机制</h3>
+    <p>每周一 8:30 由后台脚本（CodeAct）自动运行，更新数据后页面刷新即可看到新一期。</p>
+    
+    <div class="disclaimer">
+      <strong>⚠️ 免责声明：</strong>本项目为文献速览，所有点评为基于摘要的辅助参考，
+      不构成诊疗建议。临床决策请以论文原文、指南及同行评议为准。
+    </div>
+  `;
+}
+
+function renderTopPaper(p, rank) {
+  const tags = (p.topic_tags || []).map(t => `<span class="tag">#${escapeHtml(t)}</span>`).join('');
+  const doiLink = p.doi ? `<a class="doi-link" href="https://doi.org/${p.doi}" target="_blank">📎 DOI: ${escapeHtml(p.doi)}</a>` : '';
+  const pmidLink = p.pmid ? `<a class="doi-link" href="https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/" target="_blank" style="margin-left:12px">🔗 PMID: ${escapeHtml(p.pmid)}</a>` : '';
+  
+  const commentHtml = p.commentary ? Object.entries(p.commentary).map(([k, text]) => {
+    const persona = PERSONAS[k] || { name: k, angle: '' };
+    return `
+      <div class="comment ${k}">
+        <div class="author">${escapeHtml(persona.name)}<span class="angle">${escapeHtml(persona.angle)}</span></div>
+        <div class="body">${escapeHtml(text)}</div>
+      </div>
+    `;
+  }).join('') : '';
+  
+  return `
+    <div class="top-paper">
+      <span class="rank">Top ${rank}</span>
+      <h3>${escapeHtml(p.title)}<span class="cn">${escapeHtml(p.title_cn || '')}</span></h3>
+      <div class="meta-line">
+        <span class="journal">📖 ${escapeHtml(p.journal || p.journal_abbrev || '')}</span>
+        <span>📅 ${escapeHtml(p.publish_date || '')}</span>
+        <span>👥 ${escapeHtml((p.authors || []).slice(0, 3).join(', '))}${(p.authors || []).length > 3 ? ' et al.' : ''}</span>
+      </div>
+      ${p.abstract_cn ? `<div class="abstract">${escapeHtml(p.abstract_cn)}</div>` : (p.abstract ? `<div class="abstract">${escapeHtml(p.abstract)}</div>` : '')}
+      ${tags ? `<div class="tags">${tags}</div>` : ''}
+      <div>${doiLink}${pmidLink}</div>
+      <div class="comments">
+        <div class="section-title" style="font-size:14px;margin:14px 0 10px">💬 多视角点评</div>
+        ${commentHtml}
+      </div>
+    </div>
+  `;
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+// Tab 切换
+document.querySelectorAll('.nav-inner button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-inner button').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+loadData();
+</script>
+<script>const EMBEDDED_DIGEST = {
+  "issue_date": "2026-06-29",
+  "period": "2026-06-23 ~ 2026-06-29",
+  "total_papers": 104,
+  "top_papers": [
+    {
+      "pmid": "42342063",
+      "doi": "10.1016/j.jpedsurg.2026.163260",
+      "title": "Foreign body ingestion in children: impact of a digital app on clinical decision-making.",
+      "title_cn": "儿童异物吞入：数字应用程序对临床决策的影响",
+      "authors": [
+        "Gigola F",
+        "Silecchia A",
+        "Parri N",
+        "Coletta R",
+        "Morabito A"
+      ],
+      "journal": "Journal of pediatric surgery",
+      "journal_abbrev": "J Pediatr Surg",
+      "publish_date": "2026-06-24",
+      "abstract": "[BACKGROUND] Foreign Body Ingestion (FBI) is a common reason for paediatric Emergency Department (ED) visits. Although most cases resolve spontaneously, a significant proportion requires urgent intervention. Adherence to standardised, evidence-based protocols is essential to prevent complications and ensure appropriate care.
+[METHODS] This retrospective, single-centre study analysed all paediatric FBI cases over a four-year period. Demographic, clinical, and management data were retrieved and compared with international guidelines and recommendations from the Corpi Estranei mobile application, a digital decision-support tool derived from North American Society for Paediatric Gastroenterology, Hepatology and Nutrition (NASPGHAN) and European Society for Gastroenterology, Hepatology and Nutrition (ESPGHAN) protocols.
+[RESULTS] A total of 475 confirmed cases were identified (59.6% males). Most patients were aged 2-5 years (50.3%), and blunt objects were the most frequently ingested items (82.5%). Most children were asymptomatic (72.6%), while 26% required hospitalisation. Among admitted patients, 64.7% underwent endoscopic or surgical intervention. Interhospital transfers significantly increased hospitalisation rates; however, 37% of transfers were potentially avoidable. Fifteen cases (3.2%) deviated from guideline-based management, mainly due to unnecessary or delayed procedures or omitted imaging, most of which involved transferred patients (p < 0.05).
+[CONCLUSIONS] Management of paediatric FBI remains heterogeneous, with frequent deviations from recommended protocols and a notable rate of avoidable transfers and procedures. This study suggests that structured decision-support algorithms may help reduce avoidable transfers and improve guideline adherence in regional paediatric networks.",
+      "abstract_cn": "回顾性单中心研究纳入475例儿童异物吞入病例，其中72.6%无症状，26%需住院，住院患者中64.7%接受了内镜或手术干预。研究发现15例（3.2%）偏离指南管理，主要涉及转诊患者（p<0.05），且37%的转诊可能可避免。研究提示基于数字决策支持算法的结构化管理路径可提高区域儿科网络中的指南依从性。",
+      "topic_tags": [
+        "儿童异物吞入",
+        "急诊临床决策",
+        "数字健康工具",
+        "指南依从性",
+        "小儿消化内镜"
+      ],
+      "commentary": {
+        "ladd": "儿童消化道异物处理看似简单，实则暗藏解剖学陷阱——食管三个生理狭窄在不同年龄段小儿的位置和管径差异显著，这直接影响异物嵌顿风险评估。2-5岁患儿之所以高发，与此阶段儿童口腔探索行为及食管动力不成熟密切相关。研究中82.5%的钝性异物多数可望自行排出，但我们外科医生必须清醒认识到：盲目等待与过度干预之间，仅隔着一道精准的解剖学判断。",
+        "gross": "1938年我率先做PDA结扎时，所有人说我鲁莽；如今这个研究让我看到数字时代的外科勇气——把NASPGHAN和ESPGHAN指南做成一键可及的App，让急诊医生在午夜也能做出标准决策，这才是真正的技术创新。跨学科融合从来不是谁取代谁，而是让临床决策从依赖个人经验升级为系统化输出。64.7%的住院干预率和3.2%的偏离率说明：有了工具，指南依从性才能真正落地。",
+        "koop": "我最担心的是那37%本可避免的转诊——对一个2岁孩子的家庭来说，深夜被救护车从一个医院转到另一个医院，父母的焦虑和孩子的恐惧是任何临床量表都量不出来的。这项研究提醒我们：技术的价值不仅在于让医生少犯错，更在于让孩子少折腾。72.6%无症状的患儿或许只是需要观察，但如何让焦急的家长安心接受\"回家等待\"这个医嘱，恐怕比内镜操作本身更需要人文关怀。",
+        "ebm": "475例回顾性单中心研究，p<0.05的统计学意义能否支撑\"数字App改善临床决策\"这一结论？我注意到住院患者干预率64.7%与文献报道的20-30%自发排出率之间存在张力——是转诊偏倚还是真实需要？3.2%的偏离率虽具统计显著性，但绝对数仅15例，effect size和临床显著性需要更审慎的解读。建议未来开展多中心前瞻性研究，以效应量而非p值评估数字决策工具的真实效用。"
+      }
+    },
+    {
+      "pmid": "42348036",
+      "doi": "10.1007/s00383-026-06513-4",
+      "title": "Global prognostic factors for mortality and major postoperative morbidity in neonatal intestinal atresia in the modern surgical era: a systematic review and meta-analysis.",
+      "title_cn": "现代外科时代新生儿肠闭锁死亡率和主要术后并发症的全球预后因素：一项系统评价与荟萃分析",
+      "authors": [
+        "Khosravi R",
+        "Alizadeh H"
+      ],
+      "journal": "Pediatric surgery international",
+      "journal_abbrev": "Pediatr Surg Int",
+      "publish_date": "2026-06-25",
+      "abstract": "[BACKGROUND] Neonatal intestinal atresia remains a significant cause of morbidity and mortality despite advances in neonatal intensive care, anesthesia, and neonatal surgical management. This systematic review and meta-analysis aimed to identify and quantify global prognostic factors associated with mortality and major postoperative morbidity in the modern surgical era.
+[METHODS] A comprehensive systematic literature review and meta-analysis was conducted in major databases from January 2000 to February 2026. Studies reporting mortality or major morbidity (anastomotic leak, unplanned reoperation, sepsis) after surgical repair of intestinal atresia in neonates were included. Data were pooled using a random-effects model. Subgroup and sensitivity analyses were performed to explore heterogeneity. Certainty of evidence was assessed with GRADE.
+[RESULTS] Twenty-one studies comprising 2,040 neonates were included. The pooled mortality rate was 10% (95% CI 5-19%; I²=84%). Mortality was significantly higher in low- and middle-income countries and African studies (p < 0.001). Sensitivity analyses confirmed the robustness of the findings. The pooled unplanned reoperation rate was 15.1% (95% CI 12.7-17.6%; I²=31%) and anastomotic leak rate was 7.5% (95% CI 4.8-13.0%; I²=53%). Independent prognostic factors for adverse outcomes included prematurity (OR 4.9), low birth weight (OR 28.27), associated anomalies (OR 35.34), meconium peritonitis (OR 3.29), and surgical technique (primary anastomosis vs. Bishop-Koop). Sensitivity analyses confirmed robustness of the findings. Certainty of evidence was moderate for mortality and high for reoperation.
+[CONCLUSION] In the modern era, mortality after neonatal intestinal atresia repair remains substantial, with marked disparities between high-income and low- and middle-income settings. Key modifiable and non-modifiable prognostic factors were identified that can inform risk stratification and clinical decision-making. Targeted, context-appropriate interventions in resource-limited settings are urgently needed to close the global survival gap.",
+      "abstract_cn": "该系统评价纳入21项研究共2040例新生儿，旨在识别和量化肠闭锁术后死亡和主要并发症的全球预后因素。汇总死亡率10%，中低收入国家显著更高。主要不良预后因素包括早产（OR 4.9）、低出生体重（OR 28.27）、合并畸形（OR 35.34）、胎粪性腹膜炎及手术方式。计划外再手术率15.1%，吻合口漏率7.5%。研究揭示了显著的全球生存差距，呼吁资源受限地区的针对性干预。",
+      "topic_tags": [
+        "新生儿肠闭锁",
+        "系统评价与荟萃分析",
+        "全球健康差异",
+        "预后因素分析",
+        "术后并发症"
+      ],
+      "commentary": {
+        "ladd": "新生儿肠闭锁的手术结局，解剖因素永远是底层逻辑——合并畸形的OR值高达35.34，这说明腹腔内不只是简单的一段闭锁，术前影像评估必须像我们当年做胆道闭锁术前造影那样精细。低出生体重的OR 28.27也印证了肠道发育成熟度与手术耐受性的直接关联，这在上世纪我们只能靠术中触摸判断的事情，如今有了更精准的预测工具。胎粪性腹膜炎作为预后因素，提示炎症粘连会改变正常解剖层次，术中分离需格外谨慎。当然，高达84%的异质性也提醒我们，全球患儿的解剖变异和就诊时机差异巨大，\"一刀切\"的手术策略并不存在。",
+        "gross": "看到Bishop-Koop与一期吻合两种术式被作为预后因素比较，我感到欣慰——手术技术创新在循证医学框架下终于有了发言权。1938年我做PDA结扎时被同行质疑，如今meta分析能告诉我们哪种术式更适合特定患儿群体，这本身就是进步。低/中收入国家死亡率显著更高，不是技术本身的问题，而是\"技术可及性\"的问题——我们需要的创新不只是新术式，更是在资源受限条件下仍能安全施行的手术体系。15.1%的计划外再手术率和7.5%的吻合口漏率，对于一个\"成熟\"的手术来说，仍有压缩空间，这需要外科技术创新来解决。",
+        "koop": "2040例新生儿的数据背后，是2040个家庭在手术室外的彻夜等待。我常常提醒年轻同行，外科医生最容易忘记的，是孩子在麻醉醒来那一刻喊的不是切口疼，是\"妈妈在哪\"。合并畸形OR 35.34这个数字，对家长来说意味着什么？意味着孩子可能不只是经历一次手术，而是漫长的多学科诊治旅程。全球生存差距的发现让我心痛——同样是肠闭锁，出生在低收入国家和高收入国家的孩子，命运截然不同。我们发表的不仅是paper，更是对这些孩子和他们家庭的责任。",
+        "ebm": "21项研究2040例的汇总分析看似样本量可观，但I²=84%的高异质性提示我们需谨慎解读。p<0.001的统计显著性和临床显著性是两回事——低收入国家的高死亡率是系统误差还是真实效应？亚组分析虽试图解释异质性，但原始研究的质量控制无从追溯。OR 28.27的低出生体重效应量确实很大，但这些数据大多来自回顾性队列，混杂因素难以控制。GRADE评级给出\"中等确定性\"，这意味着临床决策仍需结合当地实际。该研究的最大价值不在于精确的数字，而在于揭示了全球儿外科结局不平等的island，等待我们去填平。"
+      }
+    },
+    {
+      "pmid": "42341303",
+      "doi": "10.1056/NEJMcp2314424",
+      "title": "Prevention and Treatment of Peanut Allergy.",
+      "title_cn": "花生过敏的预防与治疗",
+      "authors": [
+        "Du Toit G",
+        "Lack G"
+      ],
+      "journal": "The New England journal of medicine",
+      "journal_abbrev": "N Engl J Med",
+      "publish_date": "2026-06-25",
+      "abstract": "Early introduction of peanut protein reduces allergy prevalence by approximately 80%, with efficacy diminishing as introduction is delayed. Appropriate prevention involves ingestion of approximately 2 g of peanut protein weekly for infants at low risk and 4 to 6 g weekly for infants at high risk. Population-level implementation that targets all infants achieves greater reduction in disease burden than approaches that target only high-risk groups, although disparities exist among some ethnic groups and groups with restricted access to care. Peanut immunotherapy initiated in younger children (1 to 3 years of age) shows superior efficacy and higher rates of clinical remission as compared with immunotherapy initiated in older children. The natural history of untreated peanut allergy follows a trajectory of increasing peanut-specific IgE levels and clinical reactivity over time, underscoring the importance of early intervention during this narrow developmental window.",
+      "abstract_cn": "早期引入花生蛋白可降低约80%的过敏发生率，且效果随引入时间延迟而减弱。低风险婴儿每周摄入约2克花生蛋白，高风险婴儿每周4-6克。针对全体婴儿的群体干预比仅针对高危群体的策略更能减轻疾病负担，尽管在某些种族和医疗资源受限群体中存在差异。在1-3岁幼儿中启动花生免疫治疗的效果优于年龄较大儿童，提示早期干预这一狭窄发育窗口的重要性。",
+      "topic_tags": [
+        "花生过敏",
+        "食物过敏预防",
+        "免疫治疗",
+        "儿童变态反应",
+        "早期干预"
+      ],
+      "commentary": {
+        "ladd": "这篇研究让我重新审视\"窗口期\"这一概念——正如我们早就认识到某些先天性畸形存在最佳手术时机，花生过敏的干预也存在类似的解剖生理窗口。2克与4-6克的剂量差异听起来细微，却体现了对不同风险层级患儿生理应答的精细区分，这种个体化思维值得外科同道借鉴。早期摄入花生蛋白建立的免疫耐受机制，与我们追求的解剖复位与功能重建在理念上异曲同工。",
+        "gross": "1938年我提出PDA结扎术时，主流观点认为早产儿不该做手术；如今这项研究挑战的则是\"晚加辅食更安全\"的百年教条。1-3岁免疫治疗的优越性数据令人振奋——这说明医学进步往往发生在\"该不该做\"的争论之后。敢于把预防战线前移、敢于用干预代替被动等待，这才是临床创新的精髓。群体层面的推广策略更是把个案经验升华为公共卫生实践，这步子迈得够大。",
+        "koop": "我们外科医生习惯了关注手术切口，但孩子真正害怕的从来不是刀口——正如花生过敏患儿家庭真正恐惧的不是诊断本身，而是那一次次的意外暴露和急诊奔波。研究中提到的种族和医疗资源差异让我揪心：再好的预防策略，如果无法触达弱势群体，就只是精英医学的自我满足。每一个\"妈妈在哪\"式的恐惧，都值得我们认真对待。",
+        "ebm": "降低80%发生率的数据很漂亮，但研究设计是系统性综述还是单一RCT？高危与低危组的分层依据是否经过外部验证？不同种族间的 disparities 提示存在混杂因素，这些在结论推导时需要审慎。此外，p<0.05不代表临床意义足够大——约80%这个数字的效应量及置信区间同样关键。从循证角度看，这篇综述的证据链条还需要更细致的质量评价支撑。"
+      }
+    }
+  ],
+  "brief_mentions": [
+    {
+      "pmid": "42349545",
+      "title": "ECMO cannulation techniques in children: heterogeneous and often complicated.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "该研究评估儿童ECMO置管技术的多样性，发现置管方式差异大且并发症常见。"
+    },
+    {
+      "pmid": "42349543",
+      "title": "Utility of Neonatal Chest X-ray in Patients with Prenatally Diagnosed Congenital Lung Malformations.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "该研究评估新生儿胸片在产前诊断先天性肺畸形患儿中的诊断价值，发现胸片对确定病变及指导手术具有重要作用。"
+    },
+    {
+      "pmid": "42347968",
+      "title": "Feasibility of left subcostal single-incision laparoscopic surgery for pediatric left retroperitoneal space-occupying lesions.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "该研究评估左肋下单孔腹腔镜手术在儿童左侧腹膜后占位病变中的可行性，结果显示手术成功率高且并发症低。"
+    },
+    {
+      "pmid": "42335922",
+      "title": "Non-invasive removal of the Smart tracheal occlusion device for fetal congenital diaphragmatic hernia: a single-arm, open-label, phase 1 study.",
+      "journal_abbrev": "Lancet",
+      "one_line": "本研究验证非侵入性取出胎儿先天性膈疝智能气管封堵装置的安全性及可行性，初步结果显示无严重不良事件。"
+    },
+    {
+      "pmid": "42349476",
+      "title": "Unleash the synergies: children's rights and the new strategy for child and adolescent health in Europe and Central Asia.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "本文阐述儿童权利与欧洲及中亚新一轮儿童青少年健康战略的协同作用，呼吁将权利框架纳入公共卫生政策。"
+    },
+    {
+      "pmid": "42349544",
+      "title": "Pediatric Robotic Thyroid Surgery and Scar-Related Quality of Life: A Retrospective Cohort of 40 Patients.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "该回顾性研究评估机器人甲状腺手术在儿科患者中的应用，发现术后疤痕相关生活质量评分良好，美容效果佳。"
+    },
+    {
+      "pmid": "42347857",
+      "title": "Challenging the standard: comparison of outcomes between laparoscopically assisted anorectoplasty (LAARP) and posterior sagittal anorectoplasty (PSARP) in the correction of rectobulbar fistula in pediatric patients.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "该研究比较LAARP与PSARP在先天性肛门直肠畸形患儿中的疗效，发现功能结局相近但LAARP术后恢复更快。"
+    },
+    {
+      "pmid": "42342062",
+      "title": "Coexisting Pelviureteric and Vesicoureteric Junction Obstruction in Children: Diagnostic Challenges and Treatment Strategies - A Narrative Review.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "本文综述儿童合并肾盂输尿管与膀胱输尿管连接部梗阻的诊断难点与治疗策略，强调影像学与手术时机的个体化决策。"
+    },
+    {
+      "pmid": "42360759",
+      "title": "FDA Approves First Over-the-Counter Continuous Glucose Monitor for Children.",
+      "journal_abbrev": "JAMA",
+      "one_line": "报告美国FDA批准首个儿童可自行使用的连续血糖监测仪，显著提升糖尿病管理便捷性并降低低血糖风险。"
+    },
+    {
+      "pmid": "42349546",
+      "title": "HEALTH-RELATED QUALITY OF LIFE FOLLOWING THORACOSCOPIC REPAIR IN CHILDREN WITH LONG-GAP ESOPHAGEAL ATRESIA.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "该研究评估胸腔镜修复长段食管闭锁患儿的健康相关生活质量，发现术后生活质量良好且接近同龄儿童水平。"
+    },
+    {
+      "pmid": "42347881",
+      "title": "Mechanisms of recurrence after laparoscopic percutaneous extraperitoneal closure for pediatric inguinal hernia: a single-center video review study.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "通过视频回顾分析儿童腹腔镜经皮腹膜外疝修补术后复发机制，发现复发多与手术技术细节及疝囊处理不当相关。"
+    },
+    {
+      "pmid": "42342064",
+      "title": "SURGICAL MANAGEMENT OF ABDOMINAL TUMOR THROMBUS IN CHILDREN: RETHINKING STAGING AND STRATEGY.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "该研究重新评估儿童腹部肿瘤血栓的分期标准，提出基于影像学和术中发现的个体化手术策略可改善预后。"
+    },
+    {
+      "pmid": "42362868",
+      "title": "Re-administration of AAV-mediated gene therapy for OTOF-related deafness: a single-arm trial.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "该单臂试验评估对OTOF基因突变致聋儿童重复给予AAV介导基因治疗的安全性及听力恢复效果，显示部分患者显著受益。"
+    },
+    {
+      "pmid": "42361826",
+      "title": "Prioritising pregnant and parenting adolescents in the HIV and SRHR response.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "文章呼吁在HIV与性生殖健康服务中优先关注怀孕及育儿青少年，提出针对性干预措施以降低感染风险并改善母婴健康。"
+    },
+    {
+      "pmid": "42360766",
+      "title": "Earlier Egg Introduction Recommendations Linked to Fewer Infant Allergies.",
+      "journal_abbrev": "JAMA",
+      "one_line": "研究显示提前在婴儿饮食中引入鸡蛋可显著降低过敏发生率，建议更新辅食添加指南以预防食物过敏。"
+    },
+    {
+      "pmid": "42360502",
+      "title": "Late metachronous contralateral torsion after testicular torsion without contralateral orchiopexy: a mid- to long-term follow-up study.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "研究显示，未进行对侧睾丸固定的睾丸扭转患者，远期对侧扭转发生率仍较高，建议考虑预防性固定。"
+    },
+    {
+      "pmid": "42341795",
+      "title": "New responses required to address rapidly changing needs: a Lancet Commission on adolescent health and wellbeing in China.",
+      "journal_abbrev": "Lancet",
+      "one_line": "该评论呼吁针对中国青少年健康需求快速变化，制定并实施新的多部门干预措施。"
+    },
+    {
+      "pmid": "42340739",
+      "title": "Insufficient Sleep Among US Adolescents.",
+      "journal_abbrev": "JAMA",
+      "one_line": "研究指出美国青少年睡眠不足普遍且呈上升趋势，呼吁公共卫生干预以改善睡眠。"
+    },
+    {
+      "pmid": "42340703",
+      "title": "Insufficient Sleep Among US Adolescents-Reply.",
+      "journal_abbrev": "JAMA",
+      "one_line": "作者回应质疑，重申研究使用全国代表性数据，睡眠定义符合标准，结果可信。"
+    },
+    {
+      "pmid": "42336266",
+      "title": "Non-Operative Treatment of Pectus Carinatum: Fifteen Years of Outcomes and Predictors from a National Paediatric Service.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "15年经验表明，非手术矫正（支具治疗）对鸡胸有效，患者年龄小、畸形程度轻是成功预测因素。"
+    },
+    {
+      "pmid": "42335923",
+      "title": "The next step towards lower complication rates in fetal therapy for congenital diaphragmatic hernia.",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章提出改进胎儿干预技术和术后管理，以降低先天性膈疝胎儿治疗的并发症率。"
+    },
+    {
+      "pmid": "42362867",
+      "title": "Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "随机对照试验显示，生成式 AI 决策支持系统可提升基层医生诊断准确率并缩短决策时间。"
+    },
+    {
+      "pmid": "42362866",
+      "title": "Cliramitug for depletion of cardiac amyloid transthyretin: long-term follow-up of the NI006-101 trial.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "长期随访证实Cliramitug能持续降低心脏转甲状腺素淀粉样蛋白沉积，且安全性良好。"
+    },
+    {
+      "pmid": "42362865",
+      "title": "Immersive virtual reality with synchronous neurostimulation for upper-limb recovery after stroke: a randomized feasibility trial.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "随机可行性试验表明，沉浸式 VR 结合同步神经刺激可安全改善中风患者上肢功能。"
+    },
+    {
+      "pmid": "42362864",
+      "title": "Adaptive brain stimulation 2.0 for Parkinsonian gait.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "自适应脑深部刺激2.0在帕金森步态障碍患者中显著改善步态稳定性与运动灵活性。"
+    },
+    {
+      "pmid": "42362863",
+      "title": "Evaluating the robustness and readiness of large frontier models in health AI applications.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "研究评估大型前沿模型在医学诊断等任务中的鲁棒性与部署准备度，发现对噪声数据仍存脆弱性。"
+    },
+    {
+      "pmid": "42361824",
+      "title": "Daniel Mason: a tale of change.",
+      "journal_abbrev": "Lancet",
+      "one_line": "这篇人物专访通过DanielMason的成长历程，展示医学创新者如何在职业生涯中不断适应与推动变革。"
+    },
+    {
+      "pmid": "42361533",
+      "title": "Safe local management of mild traumatic brain injury: Reducing unnecessary transfers to higher-level trauma centers.",
+      "journal_abbrev": "Surgery",
+      "one_line": "研究表明在特定轻度脑外伤患者中，本地规范管理可安全降低向高级创伤中心的转诊率。"
+    },
+    {
+      "pmid": "42361532",
+      "title": "Impact of learning phase on complications and oncological quality in robotic left-sided pancreatectomy: A multicenter international analysis.",
+      "journal_abbrev": "Surgery",
+      "one_line": "多中心分析显示，机器人左侧胰腺切除术的学习阶段显著影响并发症率和肿瘤切除质量，需制定结构化训练。"
+    },
+    {
+      "pmid": "42360770",
+      "title": "US Food Swamps Have Increased as Food Deserts Remain Static.",
+      "journal_abbrev": "JAMA",
+      "one_line": "研究显示美国“食物沼泽”地区在过去十年显著增加，而“食物荒漠”基本未变，提示健康饮食环境仍存显著不均衡。"
+    }
+  ],
+  "monthly_total": 262
+};</script>
+</body>
+</html>

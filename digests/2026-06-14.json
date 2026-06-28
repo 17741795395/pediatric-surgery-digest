@@ -1,0 +1,371 @@
+{
+  "issue_date": "2026-06-14",
+  "period": "2026-06-08 ~ 2026-06-14",
+  "total_papers": 75,
+  "top_papers": [
+    {
+      "pmid": "42251887",
+      "doi": "10.1016/j.jpedsurg.2026.163227",
+      "title": "Impact of Trisomy 21 on post pull-through Enterocolitis and Bowel Function in children with Hirschsprung Disease: A PCPLC Analysis.",
+      "title_cn": "21三体对先天性巨结肠患儿拖出术后肠炎及排便功能的影响：一项PCPLC分析研究",
+      "authors": [
+        "Wallace M",
+        "Short S",
+        "Crady R",
+        "Reeder R",
+        "Ahmad H",
+        "Austin K",
+        "Badillo A",
+        "Calkins C",
+        "Durham M",
+        "Fuchs J",
+        "Gayer C",
+        "Grabowski J",
+        "Harris J",
+        "Hong C",
+        "Rana A",
+        "Rentea R",
+        "Rosen N",
+        "Saadai P",
+        "Smith C",
+        "Speck K",
+        "Velazco C",
+        "Wood R",
+        "Rollins M"
+      ],
+      "journal": "Journal of pediatric surgery",
+      "journal_abbrev": "J Pediatr Surg",
+      "publish_date": "2026-06-06",
+      "abstract": "[INTRODUCTION] We evaluated whether Trisomy 21 (T21) affected bowel management use, ability to toilet train for stool, and rates of Hirschsprung-Associated Enterocolitis (HAEC) in children with Hirschsprung disease (HD). We hypothesized that T21 would be associated with increased rates of HAEC, bowel management program (BMP) use, and delayed toilet training for stool.\n[METHODS] Children with HD in the Pediatric Colorectal and Pelvic Learning Consortium (PCPLC) database who underwent primary pull-through were included and stratified by T21 status: HD only versus HD+T21. Children requiring a redo pull-through, initially managed with a stoma, or those who had inadequate follow-up were excluded. HAEC episodes, toilet-training status, and BMP data recorded during individual PCPLC sites' clinical visits were analyzed.\n[RESULTS] 339 children with HD and 48 with HD+T21 were included. No significant differences in patient demographics, age at diagnosis, transition zone, age/weight at pull-through, type of pull-through, or child opportunity index (COI) were identified. No significant differences in BMP or number of HAEC episodes were found. Children with HD+T21 were less likely to be toilet trained at their 4-7-year visit (22.2% vs. 52.6%, p=0.002) and their 8-11-year visit (22.2% vs. 80.9%, p<0.001). On multivariable regression, T21 independently predicted lower odds of toilet training for stool at age 4-7 years.\n[CONCLUSIONS] Children with HD and T21 have delayed toilet training but have similar bowel management needs and HAEC rates to children with HD only, suggesting that differences in continence outcomes are not explained by increased enterocolitis burden or greater bowel management intensity.\n[LEVEL OF EVIDENCE] Level 3 - Retrospective Comparative Study.",
+      "abstract_cn": "本研究通过PCPLC数据库评估21三体（T21）对先天性巨结肠（HD）患儿排便管理、如厕训练能力及Hirschsprung相关肠炎（HAEC）发生率的影响。研究纳入339例HD患儿及48例HD+T21患儿，结果显示两组在人口学特征、诊断年龄、过渡区、拖出术年龄/体重及手术方式上均无显著差异。BMP使用率和HAEC发作次数亦无显著差异。然而，HD+T21患儿在4-7岁（22.2% vs 52.6%）及8-11岁（22.2% vs 80.9%）时的如厕训练成功率显著低于单纯HD组。多因素回归分析表明T21是4-7岁如厕训练延迟的独立预测因素。",
+      "topic_tags": [
+        "先天性巨结肠",
+        "21三体综合征",
+        "Hirschsprung相关肠炎",
+        "如厕训练",
+        "排便功能障碍"
+      ],
+      "commentary": {
+        "ladd": "从解剖学角度看，先天性巨结肠的病变本质是神经节细胞缺如导致的结肠蠕动障碍，而21三体患儿常合并消化道其他畸形，这本该是影响术后功能的关键解剖学因素。然而本研究令人意外地发现，两组在过渡区位置、拖出术类型等解剖学相关指标上竟无显著差异，这提示T21对术后功能的影响可能并非源于解剖学差异本身，而是在于神经发育的内在迟滞——这让我想起早年观察到唐氏患儿整体发育里程碑普遍延迟的现象，消化道神经系统的成熟或许也不例外。从手术原则而言，既然解剖结构相近，那么术后功能差异的根源更值得在术前评估中予以甄别，而非单纯归因于综合征本身。",
+        "gross": "这项研究展现了一种值得赞赏的跨学科合作精神——将小儿外科与遗传代谢、发育行为医学的数据整合分析，这在上世纪恐怕是难以想象的。我特别欣赏研究者没有止步于手术成功与否的传统评判，而是将随访终点延伸至如厕训练这一功能性指标，这种将技术创新与长期功能预后相结合的思路正是当代小儿外科应有的格局。虽然T21患儿的如厕训练延迟已被证实，但研究中HD+T21组仅48例的样本量仍显单薄，若能开展多中心前瞻性登记研究，积累更多病例并建立基因型-表型关联，或许能为这类特殊患儿的个体化手术策略开辟新路径。技术创新不正是为了回答这些老方法回答不了的问题吗？",
+        "koop": "我行医多年，最深刻的体会是：外科医生的成功不能只看切口愈合，更要问孩子能不能有尊严地长大。这项研究最重要的发现不是T21患儿如厕训练延迟本身，而是揭示了一个常被忽视的事实——这些孩子延迟的原因并非肠道问题更严重或需要更多干预，而是神经发育和认知层面的差异。这意味着我们为这些家庭提供的支持不应局限于腹部和肠道，而应延伸至日常生活能力的培养、家长心理疏导以及与特教资源的衔接。一个孩子六岁了还不能自主排便，他承受的不仅是生理不适，更可能面临社会融入的困境——这才是我们真正需要面对的医学人文课题。",
+        "ebm": "作为循证医学的践行者，我必须指出这项研究的方法学局限性：回顾性设计、仅48例的T21亚组、单中心数据收集标准可能不一致，这些因素都制约了结论的可靠性。虽然p值显著（4-7岁p=0.002，8-11岁p<0.001），但我们更应关注效应量的大小——T21组如厕训练率从22.2%到8-11岁的22.2%几乎没有变化，而单纯HD组从52.6%跃升至80.9%，这种差异的实际临床意义需要用OR值或NNT来量化。此外，HAEC作为次要终点阴性结果是否因样本量不足而产生II类错误也值得商榷。Level 3证据可以作为临床参考，但不足以改变临床实践指南，未来的多中心前瞻性验证才是必要的。"
+      }
+    },
+    {
+      "pmid": "42283642",
+      "doi": "10.1016/S2352-4642(26)00005-2",
+      "title": "SPIRIT-Children and Adolescents (SPIRIT-C) 2026 extension statement: enhancing the reporting and usefulness of paediatric randomised trial protocols.",
+      "title_cn": "SPIRIT-儿童与青少年(SPIRIT-C) 2026扩展声明：提升儿科随机对照试验方案报告的完整性与实用性",
+      "authors": [
+        "Baba A",
+        "Smith M",
+        "Potter B",
+        "Chan A",
+        "Moher D",
+        "Toulany A",
+        "Doherty-Kirby A",
+        "Nafria Escalera B",
+        "Stratton C",
+        "Gale C",
+        "Macarthur C",
+        "Purper-Ouakil D",
+        "Juszczak E",
+        "Cohen E",
+        "Reggiardo G",
+        "Preston J",
+        "Cohen J",
+        "Upton J",
+        "Allegaert K",
+        "Boerner K",
+        "Mehta K",
+        "Nguyen K",
+        "Courtney K",
+        "Hartling L",
+        "Konstantinidis M",
+        "Odermarsky M",
+        "Butcher N",
+        "Kolehmainen N",
+        "Longmuir P",
+        "Gill P",
+        "Leroy P",
+        "Feneberg R",
+        "Poluru R",
+        "Morris S",
+        "Friedrichsdorf S",
+        "Chute Nagy T",
+        "Klassen T",
+        "Lacaze-Masmonteil T",
+        "Onland W",
+        "Offringa M"
+      ],
+      "journal": "The Lancet. Child & adolescent health",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "publish_date": "2026-04-01",
+      "abstract": "Randomised controlled trial (RCT) protocols contain essential details needed to understand and evaluate the trial's planned aims, design, data collection methods, monitoring, data analysis, and participants' safety. However, key information is often omitted from paediatric RCT protocols, including details on dose adjustments of interventions based on age, body surface area, or weight; developmental appropriateness of trial outcome measures and processes; or strategies to minimise participants' anxiety and pain. These deficiencies impair the planning and implementation of potentially impactful trials for children and adolescents. Appropriate guidance is needed to support harmonised, comprehensive reporting of paediatric RCT protocols involving participants aged 0-19 years. The methodological framework for developing reporting guidelines published by the Enhancing the Quality and Transparency of Health Research (EQUATOR) Network was implemented to develop a paediatric extension to the Standard Protocol Items: Recommendations for Interventional Trials (SPIRIT) 2025 guidelines, called SPIRIT-Children and Adolescents (SPIRIT-C) 2026. A list of candidate reporting items was generated from the literature, and a Youth Advisory Group and a Family Caregiver Advisory Group contributed essential input throughout the project. An international Delphi study with a priori consensus thresholds, a consensus meeting, group writing of the explanation and elaboration paper, and pilot testing of the draft guideline were conducted. SPIRIT-C 2026 consists of a checklist with 17 new reporting items for reporting paediatric RCT protocols; four items are youth generated and six youth endorsed. SPIRIT-C 2026 can be considered a minimum set of reporting items pertinent to paediatric RCT protocols that are relevant to various interest holders, including young people, family caregivers, researchers, paediatric trialists, ethics committees, regulators, funders, and journal editors. The accompanying explanation and elaboration paper explains all items and offers examples of good reporting. Widespread implementation and uptake of SPIRIT-C 2026 should enhance the quality and usefulness of protocols for RCTs that involve participants from birth through adolescence, and ultimately foster high-quality paediatric trials.",
+      "abstract_cn": "SPIRIT-C 2026是针对0-19岁儿童和青少年随机对照试验(RCT)方案的新报告指南，扩展自SPIRIT 2025。该指南新增17项报告条目，涵盖基于年龄/体表面积的剂量调整、结局指标的发育适宜性、以及减少参与者焦虑和疼痛的策略。开发过程遵循EQUATOR Network方法学框架，通过德尔菲共识研究和青少年及家庭照护者咨询小组参与完成。该指南为研究者、伦理委员会、监管机构和期刊编辑提供了儿科RCT方案的最低报告标准，有望提升儿科临床试验质量。",
+      "topic_tags": [
+        "儿科随机对照试验",
+        "报告指南",
+        "SPIRIT-C 2026",
+        "研究方法学",
+        "儿童临床试验"
+      ],
+      "commentary": {
+        "ladd": "拉德视角（解剖·基础）：这指南让我欣慰的是终于有人系统强调儿童用药剂量调整必须基于体表面积或体重，而非简单照搬成人方案。回想当年做胆道闭锁手术，术中发现肝脏解剖变异远比成人复杂，没有标准化的试验方案记录，后来者如何重复验证？SPIRIT-C要求详细报告年龄分层的干预剂量，这实际上是在为儿科研究建立\"解剖学层面的方法论\"。发育适宜性——这个词用得好，儿童的神经发育、解剖结构每天都在变化，试验结局指标若不考虑这个变量，便是空中楼阁。",
+        "gross": "格罗斯视角（创新·技术）：1938年我做第一例PDA结扎时，没人关心什么叫\"规范化方案\"，全凭术者经验和直觉。SPIRIT-C 2026的意义在于——它把儿科临床试验从\"凑合能做\"提升到\"必须做好\"的层面。17项新条目中青少年生成4项、认可6项，这种患者驱动的试验设计本身就是创新。我最欣赏的是它对减少儿童焦虑和疼痛策略的强调，这不再是可选项，而是报告的必要组成部分。技术创新不光是手术刀，试验方法学的革新同样激动人心。",
+        "koop": "Koop视角（人文·温度）：外科医生最容易忘记的，是孩子在麻醉醒来那一刻喊的不是切口疼，是\"妈妈在哪\"。SPIRIT-C让我感动的是，它真正把\"家庭照护者\"和\"青少年\"纳入指南开发的核心过程，而非仅仅作为研究对象。德菲尔研究加入青少年和家属的声音，这不是点缀，是尊重。一个儿科临床试验，如果方案里连如何减少孩子焦虑都没有考虑，那这个试验的伦理基础在哪里？该指南强调的长期预后评估——不只是短期结局——才是一个负责任的研究者应有的视野。",
+        "ebm": "EBM守门人（方法·证据）：SPIRIT-C 2026在方法学层面有几个关键问题需要讨论：第一，德尔菲共识研究的参与专家代表性和a priori阈值设定是否在文中充分透明？第二，新增17项条目的证据来源主要是文献综述和专家共识，这属于较低级别的证据等级——指南推荐强度应谨慎标注；第三，青少年参与指南制定本身是亮点，但需注意患者偏好与循证医学证据之间的张力。建议读者将SPIRIT-C作为\"报告完整性清单\"使用，而非替代具体的统计分析计划。该指南对提升儿科RCT报告质量有实质价值，但实施效果有待前瞻性验证。"
+      }
+    },
+    {
+      "pmid": "42283643",
+      "doi": "10.1016/S2352-4642(26)00004-0",
+      "title": "CONSORT-Children and Adolescents (CONSORT-C) 2026 extension statement: enhancing the reporting and impact of paediatric randomised trials.",
+      "title_cn": "CONSORT儿童与青少年（C）2026扩展声明：提升儿科随机对照试验的报告质量与影响力",
+      "authors": [
+        "Baba A",
+        "Smith M",
+        "Potter B",
+        "Chan A",
+        "Moher D",
+        "Toulany A",
+        "Doherty-Kirby A",
+        "Nafria Escalera B",
+        "Stratton C",
+        "Gale C",
+        "Macarthur C",
+        "Purper-Ouakil D",
+        "Juszczak E",
+        "Cohen E",
+        "Reggiardo G",
+        "Preston J",
+        "Cohen J",
+        "Upton J",
+        "Allegaert K",
+        "Boerner K",
+        "Mehta K",
+        "Nguyen K",
+        "Courtney K",
+        "Hartling L",
+        "Konstantinidis M",
+        "Odermarsky M",
+        "Butcher N",
+        "Kolehmainen N",
+        "Longmuir P",
+        "Gill P",
+        "Leroy P",
+        "Feneberg R",
+        "Poluru R",
+        "Morris S",
+        "Friedrichsdorf S",
+        "Chute Nagy T",
+        "Klassen T",
+        "Lacaze-Masmonteil T",
+        "Onland W",
+        "Offringa M"
+      ],
+      "journal": "The Lancet. Child & adolescent health",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "publish_date": "2026-04-01",
+      "abstract": "Appropriately designed, conducted, and reported randomised controlled trials (RCTs) in children and adolescents inform treatment and health-care decisions made by young people, families, researchers, clinicians, regulators, funders, policy makers, and other interest holders. To critically evaluate, interpret, and apply trial results, readers require access to a complete and transparent report of what was planned, done, and found, taking unique considerations specific to children and adolescents into account. Harmonised guidance based on evidence and consensus is needed to optimise standardised reporting and reduce research waste in paediatric RCTs. As an extension to the Consolidated Standards of Reporting Trials (CONSORT) 2025 statement, the CONSORT-Children and Adolescents (CONSORT-C) 2026 reporting guideline aims to improve the quality and completeness of reporting of paediatric RCTs that involve participants aged 0-19 years. The Enhancing the Quality of Transparency of Health Research (EQUATOR) Network's published framework primarily informed the development of CONSORT-C 2026. A literature review was conducted to generate a list of candidate reporting items. To obtain direct input from young people and family caregivers throughout the project, a Youth Advisory Group and a Family Caregiver Advisory Group were formed. An international Delphi study with a priori consensus thresholds, consensus meeting, group writing of the explanation and elaboration paper, and pilot testing were conducted. CONSORT-C 2026 consists of a checklist with 13 new reporting items, including one youth-generated and six youth-endorsed items; the accompanying explanation and elaboration paper explains all items and offers examples of good reporting. CONSORT-C 2026 can be considered a minimum set of reporting items applicable to paediatric RCT reports reflecting the priorities of clinicians, researchers, young people, family caregivers, and other interest holders. Widespread implementation and uptake of CONSORT-C 2026 should optimise the usability of trial results for these populations, improve the reproducibility of trial results, and reduce research waste.",
+      "abstract_cn": "CONSORT-C 2026作为CONSORT 2025的扩展指南，旨在提高涉及0-19岁参与者的儿科随机对照试验的报告质量和完整性。通过文献综述、国际Delphi研究和共识会议等严格方法学流程，该指南提出了包含13个新报告条目的清单，其中1个条目由青年人提出、6个条目获青年人认可。指南强调患者和家属的参与，以期优化试验结果的可应用性，提高可重复性，减少研究浪费。",
+      "topic_tags": [
+        "儿科随机对照试验",
+        "报告规范",
+        "CONSORT指南",
+        "方法学研究",
+        "青年参与"
+      ],
+      "commentary": {
+        "ladd": "这篇指南让我想起1930年代我们在波士顿儿童医院建立手术规范时的初心——无论手术刀还是研究报告，可重复性和标准化永远是科学进步的基石。CONSORT-C 2026提出的13个新条目，本质上是在为儿科临床研究建立一套\"解剖图谱\"，让后来的研究者知道该从哪里下刀、该切到什么深度。指南特别强调0-19岁儿童的独特性，这正是我一直坚持的：儿童绝不是缩小版的成人，他们的生理特点和临床需求必须被单独考量。",
+        "gross": "1938年我做第一例PDA结扎时，没人相信盲肠旁路手术能标准化。今天CONSORT-C 2026告诉我们，连临床研究都可以建立国际共识——这种\"规范化创新\"本身就是一种突破。13个新条目中那1个由青年人自己提出的条目，让我看到了下一代研究者的魄力：他们不只是被研究的对象，更成为了研究规范的制定者。跨学科融合在这儿不只是技术层面，而是把患者、家属、临床医生和统计学家的智慧拧成一股绳。",
+        "koop": "我最欣慰的是看到\"Youth Advisory Group\"和\"Family Caregiver Advisory Group\"贯穿整个开发过程。外科医生最容易忘记的，是孩子和家长在诊疗决策中的无助感——他们不是被动接受治疗的对象，而是应该被邀请到谈判桌前的伙伴。CONSORT-C 2026让青年人参与报告规范的制定，这份尊重本身就是最好的\"软医学\"。当一个19岁的患者能够读懂临床试验报告并据此与医生讨论治疗方案时，我们才真正做到了以患者为中心的医疗。",
+        "ebm": "从方法学角度，CONSORT-C 2026的开发流程堪称严谨：先有文献综述生成候选条目，再通过a priori阈值的Delphi研究凝聚国际共识，最后通过共识会议和试点测试确保可操作性。但我需要提醒的是，这份指南本身尚未经过前瞻性验证——实施后能否真正减少研究浪费、提高报告质量，需要后续的实证研究支持。目前的证据等级主要基于专家共识和方法学框架，而非直接的临床效果数据。在临床推广前，建议在部分儿科RCT中进行强制性试点，收集实施性研究数据。"
+      }
+    }
+  ],
+  "brief_mentions": [
+    {
+      "pmid": "42276088",
+      "title": "The impact of Chile's multipronged food labelling and advertising law on early childhood excess weight: a cohort difference-in-differences study.",
+      "journal_abbrev": "Lancet",
+      "one_line": "研究显示，智利实施多层面食品标签与广告法后，幼儿超重比例显著下降，提示政策干预可有效遏制儿童肥胖趋势。"
+    },
+    {
+      "pmid": "42257859",
+      "title": "Fentanyl Utilization During Extracorporeal Membrane Oxygenation and Risk of Methadone Treatment Among Pediatric ECMO Survivors.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "在儿童ECMO期间使用芬太尼显著增加后期需美沙酮治疗的风险，提示镇痛策略需优化。"
+    },
+    {
+      "pmid": "42264138",
+      "title": "Patient Reported Outcomes After Subtotal Colectomy in Pediatric Therapy-resistant Constipation: a combined retrospective and cross-sectional study.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "针对药物难治性便秘儿童，部分结肠切除术后报告的排便功能显著改善，但部分患者仍存肠道功能障碍。"
+    },
+    {
+      "pmid": "42285283",
+      "title": "Esophageal atresia and parental psychological distress in the neonatal period.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "食道闭锁新生儿父母在产后早期出现显著心理压力，提示需提供针对性心理支持。"
+    },
+    {
+      "pmid": "42274810",
+      "title": "Early vs. delayed feeding after pediatric gastrointestinal surgery: a systematic review and meta-analysis.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "系统评价显示，儿科胃肠道手术后早期进食安全且可缩短住院时间，推荐早期喂饲。"
+    },
+    {
+      "pmid": "42285165",
+      "title": "Pneumatic Balloon Dilation versus Heller's Myotomy in Pediatric Achalasia: A Systematic Review and Meta-Analysis.",
+      "journal_abbrev": "Eur J Pediatr Surg",
+      "one_line": "系统综述表明，儿科贲门失弛缓症中气动球囊扩张与Heller手术疗效相当，且并发症更少。"
+    },
+    {
+      "pmid": "42251888",
+      "title": "Beyond the Pull-Through: A Multi-Institutional Study of Long-Term Surgical and Functional Outcomes in Total Colonic Hirschsprung Disease - A Pediatric Colorectal and Pelvic Learning Consortium (PCPLC) Study.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "多中心研究显示，全结肠型先天性巨结肠手术后长期排便功能多数良好，仍有部分出现便秘或失禁。"
+    },
+    {
+      "pmid": "42251885",
+      "title": "Does the need for early cutaneous vesicostomy correlate with poor urinary outcomes in girls with cloacal malformation?",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "研究提示，cloacal畸形女孩早期需行皮肤造口者，后期尿控功能往往较差，需慎重评估。"
+    },
+    {
+      "pmid": "42285117",
+      "title": "Prevention of postpartum haemorrhage: from evidence to implementation at scale.",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章综述了产后出血预防的循证措施，并探讨在大规模推广中实现的关键环节。"
+    },
+    {
+      "pmid": "42276863",
+      "title": "Radio-surgical decision-making in hepatoblastoma in the post-PHITT era: SIOPEL consensus recommendations.",
+      "journal_abbrev": "Semin Pediatr Surg",
+      "one_line": "会议制定了肝母细胞瘤在PHITT后放疗与手术决策的SIOPEL共识，为治疗方案提供规范。"
+    },
+    {
+      "pmid": "42257719",
+      "title": "Comparison of non-invasive liver fibrosis indicators for biliary atresia.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "比较非侵入性肝纤维化指标显示，弹性成像和血清标志物在胆道闭锁患儿的纤维化评估中准确度不同。"
+    },
+    {
+      "pmid": "42285119",
+      "title": "Postpartum haemorrhage: epidemiology, consequences, and missed opportunities.",
+      "journal_abbrev": "Lancet",
+      "one_line": "产后出血仍是产妇死亡主要原因，研究指出预防缺口显著，亟需强化干预措施。"
+    },
+    {
+      "pmid": "42276356",
+      "title": "Disparities in Engagement with an Artificial Intelligence-Based Chat Intervention Post-appendectomy.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "研究显示，术后AI聊天干预在阑尾切除患儿中的使用率因年龄、家庭收入等出现显著差异。"
+    },
+    {
+      "pmid": "42276087",
+      "title": "Integrated food policy and child obesity.",
+      "journal_abbrev": "Lancet",
+      "one_line": "综合食品政策被证实能够协同降低儿童肥胖率，提示多部门合作是实现健康目标的关键。"
+    },
+    {
+      "pmid": "42251886",
+      "title": "Association of Small Intestinal Atresia and Hirschsprung Disease in a Multi-institutional Colorectal Registry.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "多中心注册研究显示，小肠闭锁患儿常伴先天性巨结肠，提示需常规进行巨结肠筛查。"
+    },
+    {
+      "pmid": "42286323",
+      "title": "The Hong Kong Genome Project is a flagship initiative for precision medicine in Chinese populations.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "该计划旨在通过大规模全基因组测序建立华人精准医学数据库，推动疾病风险评估与个体化治疗。"
+    },
+    {
+      "pmid": "42286322",
+      "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "研究显示，通用大语言模型在医学基准测试中超越专用临床AI，提示其具备更强诊断与推理能力。"
+    },
+    {
+      "pmid": "42286321",
+      "title": "Efficacy and target engagement of dopamine agonist pramipexole for anhedonic depression: a randomized placebo-controlled trial.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "随机安慰剂对照试验表明，普拉克索对失快感抑郁患者具有显著疗效并实现多巴胺受体目标结合。"
+    },
+    {
+      "pmid": "42285120",
+      "title": "Diagnosis and treatment of postpartum haemorrhage: a race against time.",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章强调产后出血抢救必须分秒必争，综述快速诊断与止血干预的最新循证方案，以提升临床存活率。"
+    },
+    {
+      "pmid": "42285118",
+      "title": "Beyond a smoke-free generation: ending smoking within a generation.",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章提出在代际层面系统推进禁烟政策，旨在实现全代无烟的综合路径与目标。"
+    },
+    {
+      "pmid": "42285116",
+      "title": "Arri Coomarasamy: preventing postpartum haemorrhage.",
+      "journal_abbrev": "Lancet",
+      "one_line": "访谈中产科专家Coomarasamy分享其在产后出血防控方面的临床经验与最新研究成果。"
+    },
+    {
+      "pmid": "42277584",
+      "title": "'UNMIXING' Mixed-Type Intraductal Papillary Mucinous Neoplasms-Rethinking Malignancy Risk Beyond Radiological Appearance.",
+      "journal_abbrev": "Ann Surg",
+      "one_line": "研究建议对混合型导管内乳突黏液性肿瘤的恶性风险评估应结合组织学特征，而非仅依赖影像学表现。"
+    },
+    {
+      "pmid": "42277576",
+      "title": "The Path to Independence: Progression in Entrustment Reflected in Entrustable Professional Activity Ratings.",
+      "journal_abbrev": "Ann Surg",
+      "one_line": "文章利用可交付专业活动评分追踪外科住院医师信任度成长，为独立执业能力提供量化依据。"
+    },
+    {
+      "pmid": "42277464",
+      "title": "Microglia at a key inflection point in Alzheimer's disease.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "研究指出小胶质细胞在阿尔茨海默病关键转折期发挥核心作用，可能成为疾病修饰治疗的新靶点。"
+    },
+    {
+      "pmid": "42277463",
+      "title": "Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda.",
+      "journal_abbrev": "Nat Med",
+      "one_line": "报告2026年乌干达首例布迪布约病毒感染的临床表现与基因组特征，为疫情监测提供关键数据。"
+    },
+    {
+      "pmid": "42276086",
+      "title": "What can psychiatrists expect from the next DSM?",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章探讨下一版精神疾病诊断与统计手册的改动方向，展望其对临床诊疗和研究的潜在影响。"
+    },
+    {
+      "pmid": "42276085",
+      "title": "Climate, war, and the global health-care supply chain.",
+      "journal_abbrev": "Lancet",
+      "one_line": "报告揭示气候变化与武装冲突对全球医药供应链的冲击，提出增强韧性的政策建议。"
+    },
+    {
+      "pmid": "42276078",
+      "title": "J Craig Venter.",
+      "journal_abbrev": "Lancet",
+      "one_line": "访谈聚焦基因组学先驱J·Craig Venter，阐述其在合成基因组和个性化医学领域的创新贡献。"
+    },
+    {
+      "pmid": "42276077",
+      "title": "Between two worlds: war, memory, and what resists within.",
+      "journal_abbrev": "Lancet",
+      "one_line": "文章从战争记忆与内在抵抗视角，审视冲突对个体与集体心理的持久影响。"
+    },
+    {
+      "pmid": "42275915",
+      "title": "Surgical unit volume and recurrence after open groin hernia mesh repair: A nationwide register-based cohort study.",
+      "journal_abbrev": "Surgery",
+      "one_line": "全国登记研究显示，高手术量中心的开放腹股沟疝网片修复复发率显著低于低容量机构。"
+    }
+  ],
+  "monthly_total": 62
+}

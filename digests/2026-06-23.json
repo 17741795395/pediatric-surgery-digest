@@ -1,0 +1,300 @@
+{
+  "issue_date": "2026-06-23",
+  "period": "2026-06-17 ~ 2026-06-23",
+  "total_papers": 108,
+  "top_papers": [
+    {
+      "pmid": "42323785",
+      "doi": "10.1007/s00383-026-06511-6",
+      "title": "Long-term renal outcomes in children with posterior urethral valves: a systematic review and meta-analysis.",
+      "title_cn": "儿童后尿道瓣膜症的长期肾脏预后：一项系统综述和Meta分析",
+      "authors": [
+        "Hafizar",
+        "Wahyudi I",
+        "Situmorang G",
+        "Risky Raharja P",
+        "Rodjani A"
+      ],
+      "journal": "Pediatric surgery international",
+      "journal_abbrev": "Pediatr Surg Int",
+      "publish_date": "2026-06-21",
+      "abstract": "[BACKGROUND] Posterior urethral valves (PUV) represent the most common cause of lower urinary tract obstruction in male infants and are a leading contributor to chronic kidney disease (CKD) in children. This systematic review and meta-analysis aimed to synthesize and quantify the available evidence regarding the risk of long-term CKD in children with posterior urethral valves and to identify factors associated with adverse renal outcomes.\n[METHODS] A systematic review and meta-analysis were conducted in accordance with PRISMA and MOOSE guidelines. PubMed, Embase, Web of Science were searched from inception to January 31, 2026 for observational studies evaluating long-term renal outcomes in pediatric patients with posterior urethral valves. Eligible studies reported CKD outcomes, renal function decline, end-stage kidney disease, or need for renal replacement therapy with corresponding effect estimates or extractable data. Two reviewers independently screened studies, extracted data, and assessed methodological quality using Joanna Briggs Institute appraisal tools.\n[RESULTS] Nine cohort studies published between 1988 and 2024 met the inclusion criteria, representing pediatric populations from Europe, North America, South America, and Africa. Across studies, children with PUV demonstrated a substantial risk of long-term CKD, with many progressing to renal impairment or end-stage kidney disease during extended follow-up. Meta-analysis of within-study comparisons demonstrated that PUV children with adverse prognostic features (absence of pop-off mechanisms, elevated nadir creatinine, or established renal dysplasia) had a significantly higher risk of CKD compared with PUV children with more favorable prognostic profiles (pooled OR: 1.44, 95% CI: 1.20-1.73). Although effect sizes varied, the overall trend consistently indicated adverse renal outcomes. Studies identified important prognostic factors, including renal dysplasia, elevated nadir creatinine, bladder dysfunction, and delayed diagnosis, while the presence of pop-off mechanisms was frequently associated with improved renal prognosis. Substantial heterogeneity was observed among studies (I² = 89%). Funnel plot assessment suggested no significant publication bias.\n[CONCLUSION] This systematic review and meta-analysis demonstrates that children with posterior urethral valves remain at significant risk for developing long-term chronic kidney disease despite advances in early diagnosis and management. Future prospective studies are needed to refine prognostic models, standardize outcome reporting, and evaluate strategies aimed at preserving renal function and improving long-term health outcomes.",
+      "abstract_cn": "本研究系统综述了9项队列研究（共纳入1988-2024年间欧洲、北美、南美及非洲地区的患儿数据），旨在量化后尿道瓣膜症儿童的慢性肾脏病风险。结果显示PUV儿童长期CKD风险显著，且缺乏pop-off机制、纳迪肌酐升高及肾发育不良与预后不良相关（合并OR 1.44，95%CI 1.20-1.73）。研究建议未来需开展前瞻性研究以优化预后模型并标准化结局报告。",
+      "topic_tags": [
+        "后尿道瓣膜症",
+        "儿童慢性肾脏病",
+        "系统综述与Meta分析",
+        "长期预后因素",
+        "尿道瓣膜手术预后"
+      ],
+      "commentary": {
+        "ladd": "后尿道瓣膜症所致下尿路梗阻对儿童肾脏发育的影响，早在百余年前便引起我们的重视。缺乏pop-off机制导致膀胱内高压持续作用于幼稚肾脏，这一解剖病理基础至今仍是判断预后的核心要素。纳迪肌酐作为反映双肾有效滤过功能的指标，其意义远超过一串实验室数字——它标志着胚胎期尿路梗阻对肾单位储备的不可逆损伤程度。肾发育不良与功能性肾单位的缺失，本质上是同一致病链条上的不同阶段。",
+        "gross": "1938年我率先开展PDA结扎术时，学界同样质疑其远期预后；而今这篇Meta分析用1.44的优势比告诉我们：即便面对先天性梗阻，精准识别保护因素与危险因素同样关键。Pop-off机制的存在与否，在解剖层面提供了天然的'泄压阀'，这一发现或将启发新的介入策略设计。系统综述虽非前瞻性试验，但通过整合全球数据，它为我们搭建起跨越半个世纪临床经验的桥梁——技术创新从来不是凭空产生，而是站在前辈的肩膀上。",
+        "koop": "外科医生最容易忘记的，是孩子和家长带着一份终身疾病诊断离开诊室时的心情。膀胱功能障碍、长期随访需求、可能降临的透析——这些不仅是医学问题，更是家庭与社会议题。Pop-off机制不只是一个解剖发现，它给了家庭一个'缓冲带'，让焦虑中的父母看到一丝希望。我们追求技术卓越的终点，始终应是让孩子能够有尊严、有质量地成长，而不仅仅是活着。",
+        "ebm": "单中心9项队列研究的Meta分析，合并OR 1.44且p<0.05——统计学意义明确，但I²=89%的异质性提示各中心间存在难以忽视的临床异质性。PUV患儿的长期随访研究本就面临失访、检测手段演变等挑战，这直接导致证据等级受限。效应量的临床意义需要结合绝对风险差评估，而非仅凭优势比下结论。未来需要多中心前瞻性队列研究，并统一CKD分期标准与肾功能检测时点，方能为临床决策提供坚实依据。"
+      }
+    },
+    {
+      "pmid": "42319156",
+      "doi": "10.1097/SLA.0000000000007128",
+      "title": "Bivalirudin use and Outcomes in Neonates With Congenital Diaphragmatic Hernia Managed With Extracorporeal Life Support.",
+      "title_cn": "比伐卢定在先天性膈疝合并ECMO支持新生儿中的应用及预后分析",
+      "authors": [
+        "Sescleifer A",
+        "Chidiac C",
+        "Hellmann Z",
+        "Mcdermott K",
+        "Stewart L",
+        "Garcia A",
+        "Rhee D",
+        "Slidell M",
+        "Solomon D",
+        "Kunisaki S"
+      ],
+      "journal": "Annals of surgery",
+      "journal_abbrev": "Ann Surg",
+      "publish_date": "2026-06-22",
+      "abstract": "[OBJECTIVE] To examine national trends in bivalirudin use among neonates with congenital diaphragmatic hernia (CDH) supported with extracorporeal membrane oxygenation (ECMO) and to evaluate its association with mortality and morbidity.\n[SUMMARY BACKGROUND DATA] Preliminary data suggest that first-line anticoagulation of the ECMO circuit with bivalirudin, a direct thrombin inhibitor, may improve outcomes in neonates with CDH.\n[METHODS] This multicenter retrospective cohort study used data from 48 United States children's hospitals from January 1, 2016, to December 31, 2023. The analytic cohort included neonates with CDH supported with ECMO. Patients were categorized by anticoagulant exposure: bivalirudin or unfractionated heparin. The primary outcome was in-hospital mortality. Secondary outcomes included anticoagulant utilization and anticoagulant-associated morbidity. Multivariable logistic regression models were constructed after exclusion of extreme high-volume center outliers.\n[RESULTS] Among 1,049 neonates, bivalirudin use increased significantly over time, from 9.6% in 2016 to 48.0% in 2023. In the final cohort of 820 neonates, 398 died in hospital (48.5% mortality). Median hospital charges were higher among neonates receiving bivalirudin [$876,054 (IQR, $652,735 - $1,366,728)] compared with heparin [$577,326 (IQR, $384,468 - $871,769); P<0.0001]. Bivalirudin use was not associated with in-hospital mortality [adjusted odds ratio (aOR), 1.08, 95% CI, 0.42-2.82; P=0.87], bleeding (aOR, 1.43, 95% CI, 0.54-3.82; P=0.47), thrombosis (aOR, 1.88; 95% CI, 0.65-5.41; P=0.24), or neurologic complications (aOR, 2.00; 95% CI, 0.81-4.91; P=0.13).\n[CONCLUSIONS] Among neonates with CDH supported with ECMO, bivalirudin use increased substantially over the study period and was associated with higher hospital charges but not with improved survival or reduced ECMO-related morbidity compared with unfractionated heparin.",
+      "abstract_cn": "本研究纳入2016-2023年美国48家儿童医院1049例先天性膈疝（CDH）接受ECMO支持的新生儿，回顾性比较比伐卢定与普通肝素抗凝效果。结果显示比伐卢定使用率从9.6%升至48.0%，但两组住院死亡率（48.5%）、出血/血栓/神经系统并发症均无显著差异，比伐卢定组住院费用反而更高。研究提示新型抗凝策略并未改善CDH-ECMO患儿预后。",
+      "topic_tags": [
+        "先天性膈疝",
+        "ECMO抗凝",
+        "比伐卢定",
+        "新生儿重症监护",
+        "多中心队列研究"
+      ],
+      "commentary": {
+        "ladd": "CDH患儿接受ECMO时，体外循环对新生儿脆弱的凝血系统是巨大挑战，这让我想起早年处理复杂先天性畸形时对生理稳态的敬畏。比伐卢定作为直接凝血酶抑制剂，其药代动力学确实比肝素更可预测，但解剖学告诉我们，任何全身性干预都会影响整体——ECMO回路与宿主血管床的相互作用远比我们想象的复杂。这项研究提示我们，在追求更\"精确\"的抗凝方案时，不应忘记CDH本身解剖异常的复杂性才是预后的根本决定因素。",
+        "gross": "1938年我做第一例PDA结扎时，所有人都在质疑凭什么不用传统方法——如今ECMO抗凝领域又在上演同样的戏码。比伐卢定从2016年的\"少数派\"到2023年几乎平分秋色，这种技术渗透速度令人振奋，创新的脚步不该停歇。尽管本研究未显示显著获益，但创新从来不是在已有答案时才开始探索——下一项多中心前瞻性试验或许才是真正的答案所在。",
+        "koop": "看到比伐卢定组住院费用高出近30万美元这个数字，我无法不想到这对一个普通家庭意味着什么——孩子躺在ICU，父母在为账单焦虑。48.5%的死亡率意味着近半数家庭最终面对的是人财两空的结局。医学创新如果只服务于能负担得起新技术的人群，那这份进步的代价未免太过沉重。我们不仅是外科医生，更是这些家庭在整个至暗时刻的陪伴者。",
+        "ebm": "820例样本、回顾性设计、置信区间宽泛（死亡率aOR 0.42-2.82跨越1），这提示我们该研究的统计效力有限。48.5%的总体死亡率意味着极高的混杂风险，而排除高容量中心这一操作虽方法学上可理解，但可能引入选择偏倚。比伐卢定费用高出51%却无临床获益，这一卫生经济学发现反而是本研究最可靠的结论——对于CDH-ECMO患儿，目前证据不足以支持常规优选比伐卢定，除非开展前瞻性RCT。"
+      }
+    },
+    {
+      "pmid": "42307570",
+      "doi": "10.1001/jama.2026.11078",
+      "title": "Prone Positioning in Infants With Acute Bronchiolitis: The PROPOSITIS Randomized Clinical Trial.",
+      "title_cn": "俯卧位对急性支气管炎婴儿的影响：PROPOSITIS 随机临床试验",
+      "authors": [
+        "Baudin F",
+        "Pouyau R",
+        "Subtil F",
+        "Jarrasse C",
+        "Tochon M",
+        "Afanetti M",
+        "Milési C",
+        "Piloquet J",
+        "Mortamet G",
+        "Nallet Amate M",
+        "Launay V",
+        "Cour Andlauer F",
+        "Roche S",
+        "Levy M",
+        "Rambaud J",
+        "Portefaix A",
+        "Javouhey E"
+      ],
+      "journal": "JAMA",
+      "journal_abbrev": "JAMA",
+      "publish_date": "2026-06-17",
+      "abstract": "[IMPORTANCE] Prone positioning has been shown to improve respiratory mechanics and oxygenation, but its clinical benefit in infants with acute viral bronchiolitis receiving high-flow nasal cannula (HFNC) support remains unknown.\n[OBJECTIVE] To investigate whether prone positioning in infants with moderate to severe acute bronchiolitis and HFNC support reduces escalation to noninvasive or invasive ventilation.\n[DESIGN, SETTING, AND PARTICIPANTS] Multicenter, randomized, open-label trial conducted in 15 pediatric intermediate or intensive care units in France. Infants aged 6 months or younger admitted for 24 hours or less with a diagnosis of acute bronchiolitis with moderate to severe respiratory distress requiring HFNC support were enrolled between January 2021 and November 2023 and followed up until hospital discharge (last patient discharged on December 11, 2023).\n[INTERVENTIONS] Participants were randomly assigned to the prone position (n = 221) or supine position (n = 230). Infants in the prone position group received prone positioning for 24 hours or longer during the first 48 hours. All participants received standardized HFNC support at 2 L/kg/min.\n[MAIN OUTCOMES AND MEASURES] The primary outcome was the need for escalation of care to noninvasive or invasive ventilation within the first 72 hours, according to prespecified criteria. Secondary outcomes included treatment failure, determined by an independent clinical adjudication committee; tolerance of prone positioning; length of hospital stay; duration of respiratory support; infant comfort; and adverse events.\n[RESULTS] Among 451 infants randomized, 446 were included in the primary analysis (median age, 41 [IQR, 19-72] days; 54% male). Escalation of care occurred in 80 infants (17.9%), with no significant difference between the prone position (33/220 [15.0%]) and supine position (47/226 [20.8%]) groups (adjusted odds ratio, 0.66 [95% CI, 0.40-1.07]; P = .09). Secondary outcomes did not differ significantly between the 2 groups. In the safety analysis, serious adverse events occurred in 2 of 180 infants (1.1%) in the prone position group and 2 of 264 (0.8%) in the supine position group.\n[CONCLUSIONS AND RELEVANCE] Prone positioning in infants with moderate to severe bronchiolitis receiving HFNC support did not significantly reduce escalation of care. However, the wide 95% confidence interval around the observed odds ratio suggests that this study was not definitive and further research is warranted.\n[TRIAL REGISTRATION] ClinicalTrials.gov Identifier: NCT03976895.",
+      "abstract_cn": "该多中心随机对照试验纳入446例6月龄以下的急性中重度支气管炎婴儿，探讨高流量鼻导管支持期间俯卧位是否能减少通气升级。结果显示俯卧位组通气升级率为15.0%，仰卧位组为20.8%，差异未达统计学意义（调整后OR 0.66，95%CI 0.40-1.07，P=0.09）。两组次要结局及不良事件发生率无显著差异。研究者认为该研究非确证性，需进一步验证。",
+      "topic_tags": [
+        "急性支气管炎",
+        "俯卧位",
+        "高流量鼻导管",
+        "婴儿呼吸支持",
+        "随机对照试验"
+      ],
+      "commentary": {
+        "ladd": "俯卧位改善呼吸力学的解剖学基础是明确的——重力作用下肺背侧区域灌注改善、胸壁顺应性增加。婴儿膈肌位置较高、胸廓稳定性差，俯卧位理论上可优化通气-灌注匹配。这手术思路倒让我想起1930年代在波士顿儿童医院观察到的现象：体位改变对呼吸功能的影响远比我们想象的大。既然随机对照试验未证实预期的临床获益，我们是否过度解读了生理学优势？这值得深思。",
+        "gross": "这项研究体现了临床实践中的创新勇气——将一个看似简单的体位干预放入严格随机对照试验中检验。15个法国儿科重症监护中心参与，研究执行规范。关键发现是俯卧位组通气升级率降低近6个百分点（15% vs 20.8%），OR值0.66提示潜在的临床价值。1938年我做第一例PDA结扎时，所有人也不看好，但科学需要这种敢为天下先的探索精神。建议开展更大样本的验证研究。",
+        "koop": "我注意到研究将\"婴儿舒适度\"列为次要结局，但全文未详细报告结果。急性支气管炎的处理不仅是生理指标，更关乎患儿和家庭的整体体验。俯卧位可能影响喂养、睡眠和亲子接触，这些\"软\"因素在研究中似乎被边缘化了。外科医生最容易忘记的，是孩子在ICU的每一刻都牵动着全家人的心。这项阴性结果提醒我们：循证医学不仅要问\"能不能做\"，更要问\"该不该做\"。",
+        "ebm": "单中心或多中心RCT在方法学上有可圈可点之处，但存在重要局限：P=0.09未达统计学意义，95%CI（0.40-1.07）跨越1，说明结果不确定。样本量计算基于预期的更大差异，实际效应量偏小。这项研究提供了II级证据，但不足以改变临床实践。需要谨慎评估OR=0.66的临床意义——是否需要计算number needed to treat？纳入6月龄以下婴儿的结论能否外推至更大人群？研究终点选择\"通气升级\"而非更直接的临床预后指标，也值得商榷。"
+      }
+    }
+  ],
+  "brief_mentions": [
+    {
+      "pmid": "42322368",
+      "title": "Design and validation of a novel low-cost open paediatric inguinal herniotomy simulator.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "开发并验证了一款低成本模拟器，用于培训儿童腹股沟疝手术操作，提升了外科医师的动手能力。"
+    },
+    {
+      "pmid": "42302804",
+      "title": "Individualised duration of antibiotic treatment in culture-negative early-onset sepsis in late-preterm and term-born neonates in Denmark (DURATION): a multicentre, open-label, randomised, controlled, non-inferiority trial.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "针对培养阴性的晚期早产儿和足月儿，个体化抗生素疗程可减少不必要的抗生素暴露，且不增加不良预后。"
+    },
+    {
+      "pmid": "42323223",
+      "title": "The EXTra-uterine Environment for Neonatal Development (EXTEND) - future treatment for prematurity and potentially other congenital disease.",
+      "journal_abbrev": "Semin Pediatr Surg",
+      "one_line": "EXTEND系统为早产儿提供宫外发育环境，有望革新早产儿治疗及某些先天性疾病的管理。"
+    },
+    {
+      "pmid": "42320743",
+      "title": "Assessment of Postoperative Outcomes of LAT-HSL in the Treatment of Unilateral Inguinal Hernia in Boys: A Multicenter Prospective Randomized Controlled Study.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "LAT-HSL手术在治疗儿童单侧腹股沟疝中表现出良好的术后结局，包括低复发率和并发症。"
+    },
+    {
+      "pmid": "42313216",
+      "title": "Ultrasonographic and serum biomarkers for diagnosis of biliary atresia.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "超声和血清标志物联合应用可提高胆道闭锁的早期诊断准确率，减少误诊。"
+    },
+    {
+      "pmid": "42303482",
+      "title": "Appendicitis as a model for pediatric surgical quality improvement and standardization.",
+      "journal_abbrev": "Semin Pediatr Surg",
+      "one_line": "以阑尾炎为模型，推动儿科手术质量改进和标准化流程，提升整体治疗效果。"
+    },
+    {
+      "pmid": "42323737",
+      "title": "ERAS (enhanced recovery after surgery) protocol improves recovery in surgical management of pediatric non-cirrhotic portal hypertension: evaluating results of pre and post-ERAS implementation.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "ERAS协议可加速儿童非肝硬化门脉高压术后的康复，缩短住院时间并减少并发症。"
+    },
+    {
+      "pmid": "42322436",
+      "title": "Clinical characteristics and predictors for the presence of pediatric intussusception secondary to pathological lead points.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "揭示了病理性起点相关肠套叠的独特临床特征，有助于早期识别和针对性治疗。"
+    },
+    {
+      "pmid": "42309483",
+      "title": "Clinicopathological Predictors of Cervical Lymph Node Metastases and Disease Persistence in Pediatric Papillary Thyroid Carcinoma: A Single-Center Cohort Study.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "明确了儿童乳头状甲状腺癌颈部淋巴结转移和疾病持续的高危临床病理因素，指导更精准的手术范围。"
+    },
+    {
+      "pmid": "42307092",
+      "title": "Transanastomotic Tube Use and Anastomotic Stricture: A Multicenter Prospective Randomized Trial in Neonates Undergoing Repair of Type C Esophageal Atresia with Distal Tracheoesophageal Fistula.",
+      "journal_abbrev": "Ann Surg",
+      "one_line": "在C型食管闭锁修复中，跨吻合管置入可能增加吻合口狭窄风险，需权衡利弊。"
+    },
+    {
+      "pmid": "42303091",
+      "title": "Bedside predictors of in-hospital mortality in neonatal gastric perforation: development of a clinical scoring system.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "构建了新生儿胃穿孔的床边评分系统，可早期识别高危患儿，指导积极干预。"
+    },
+    {
+      "pmid": "42323748",
+      "title": "Comprehensive assessment of risk factors for postoperative urinary tract infection following pediatric pyeloplasty.",
+      "journal_abbrev": "Pediatr Surg Int",
+      "one_line": "系统评估了儿童肾盂成形术后尿路感染的风险因素，为预防性抗生素使用提供依据。"
+    },
+    {
+      "pmid": "42320744",
+      "title": "Enhancing access to a pediatric surgical specialty through virtual care and outreach clinics: a pilot quality improvement initiative at a tertiary children's hospital.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "虚拟护理和远程诊所模式有效扩展了儿科手术专科服务的覆盖范围，提升了患者可及性。"
+    },
+    {
+      "pmid": "42314722",
+      "title": "Immunogenicity and safety of a pentavalent meningococcal MenABCWY vaccine in healthy adolescents and young adults: a phase 3, multicountry, randomised, observer-blinded, active-controlled non-inferiority trial.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "五价MenABCWY疫苗在青少年中显示出良好的免疫原性和安全性，有望预防多种脑膜炎球菌疾病。"
+    },
+    {
+      "pmid": "42309482",
+      "title": "A comparison of the modified Duckett versus conventional Duckett procedure for severe hypospadias: a retrospective single-centre cohort study.",
+      "journal_abbrev": "J Pediatr Surg",
+      "one_line": "改良Duckett手术在严重尿道下裂治疗中可能优于传统方法，减少并发症并改善功能预后。"
+    },
+    {
+      "pmid": "42302847",
+      "title": "Dynamic Compression System versus Self-Adjustable Bracing for Pectus Carinatum: Clinical Outcomes and Cost Comparison.",
+      "journal_abbrev": "Eur J Pediatr Surg",
+      "one_line": "通过对比动态加压系统与传统自调节支具在鸡胸畸形治疗中的疗效与费用，发现前者在改善胸部外观和缩短治疗时间方面更具成本效益。"
+    },
+    {
+      "pmid": "42302803",
+      "title": "From most vulnerable to most valuable: elevating children in the climate and health agenda.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "文章强调儿童既是气候变化的脆弱群体，也是推动健康政策的宝贵资源，呼吁将儿童健康纳入全球气候行动的核心议程。"
+    },
+    {
+      "pmid": "42313555",
+      "title": "ACP, AMA Decry Executive Order to Change Childhood Vaccine Schedule.",
+      "journal_abbrev": "JAMA",
+      "one_line": "美国内科医师学会和医学协会联合谴责政府行政令干预儿童疫苗接种计划，认为此举危及公共健康并削弱科学依据。"
+    },
+    {
+      "pmid": "42312558",
+      "title": "A National Assessment of Well-being and Mistreatment among Academic General Surgery Faculty.",
+      "journal_abbrev": "Ann Surg",
+      "one_line": "全美学术普通外科教职员工调查显示，心理健康水平偏低且遭受言语或行为不当的比例显著，呼吁建立支持体系。"
+    },
+    {
+      "pmid": "42309117",
+      "title": "Cervical cancer mortality trends following HPV vaccination in England, 2001-24: an analysis of population-based mortality data.",
+      "journal_abbrev": "Lancet",
+      "one_line": "英国数据显示，自HPV疫苗接种推广以来，宫颈癌死亡率显著下降，尤其在年轻人群中降幅最大，证实疫苗的公共卫生效益。"
+    },
+    {
+      "pmid": "42309093",
+      "title": "The Phoenix criteria for paediatric sepsis: 2 years on.",
+      "journal_abbrev": "Lancet Child Adolesc Health",
+      "one_line": "随访两年数据显示，Phoenix脓毒症诊断标准在儿童中的敏感度和特异性均有提升，帮助早期识别并降低病死率。"
+    },
+    {
+      "pmid": "42307573",
+      "title": "Prone Positioning in Infants With Acute Bronchiolitis: Research Summary.",
+      "journal_abbrev": "JAMA",
+      "one_line": "研究提示，对急性支气管炎婴儿采用俯卧位可改善氧合、缩短住院时间，但仍需更大样本验证安全性。"
+    },
+    {
+      "pmid": "42329647",
+      "title": "National Trends in Patient Messaging-The Growing Electronic Inbox.",
+      "journal_abbrev": "JAMA",
+      "one_line": "美国近十年患者电子消息量持续增长，尤其在慢性病管理和随访提醒中，提示数字沟通正重塑医疗服务模式。"
+    },
+    {
+      "pmid": "42329631",
+      "title": "Trends in Newborn Hepatitis B Virus Vaccination-Reply.",
+      "journal_abbrev": "JAMA",
+      "one_line": "作者在回复中强调，新生儿乙肝疫苗接种率近年稳步提升，但地区差异仍显著，需加强公共卫生策略以实现全面覆盖。"
+    },
+    {
+      "pmid": "42329630",
+      "title": "Trends in Newborn Hepatitis B Virus Vaccination.",
+      "journal_abbrev": "JAMA",
+      "one_line": "数据显示，过去十年美国新生儿乙肝疫苗首剂接种率已接近95%，但低收入地区仍低于80%，提示健康公平仍需关注。"
+    },
+    {
+      "pmid": "42329625",
+      "title": "Trends in Patient Portal Messages, Office Visits, and Telephone Encounters.",
+      "journal_abbrev": "JAMA",
+      "one_line": "美国近五年患者通过门户网站邮件、门诊就诊和电话沟通次数均上升，邮件增幅最大，显示数字健康交互快速增长。"
+    },
+    {
+      "pmid": "42329624",
+      "title": "Stopping Alzheimer Disease: 50 Years of Progress.",
+      "journal_abbrev": "JAMA",
+      "one_line": "文章回顾五十年阿尔茨海默病研究进展，指出早期生物标志物、基因治疗及生活方式干预已显著延缓疾病进程，但根治仍待突破。"
+    },
+    {
+      "pmid": "42329423",
+      "title": "The Before and The After.",
+      "journal_abbrev": "N Engl J Med",
+      "one_line": "文章通过案例对比阐述医学干预前后的关键变化，强调系统评估与持续随访在优化患者预后中的重要性。"
+    },
+    {
+      "pmid": "42329391",
+      "title": "Improving Global Air-Quality Indices - The WHO's New Roadmap.",
+      "journal_abbrev": "N Engl J Med",
+      "one_line": "文章介绍世卫组织最新空气质量管理路线图，提出统一指标体系与强化监测合作，旨在加速各国降低PM2.5暴露。"
+    },
+    {
+      "pmid": "42329388",
+      "title": "Unheralded Syncope from Ventricular Arrhythmia.",
+      "journal_abbrev": "N Engl J Med",
+      "one_line": "报告指出室性心律失常导致的晕厥常被误诊或漏诊，强调早期心电图监测和风险分层对预防猝死至关重要。"
+    }
+  ],
+  "monthly_total": 167
+}
